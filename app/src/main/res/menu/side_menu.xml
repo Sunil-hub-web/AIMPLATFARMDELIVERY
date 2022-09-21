@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profile"
+        android:title="Profile" />
+    <item
+        android:id="@+id/Home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/notification"
+        android:title="Notification" />
+    <item
+        android:id="@+id/support"
+        android:title="Support" />
+    <item
+        android:id="@+id/order_history"
+        android:title="Orders History" />
+
+
+    <item
+        android:id="@+id/invite_others"
+        android:title="Invite Others" />
+
+    <item
+        android:id="@+id/wallet"
+        android:title="Wallet" />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout" />
+</menu>

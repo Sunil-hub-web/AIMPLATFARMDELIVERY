@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/three_fourty_dp"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/ten_dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP"
+        android:textColor="#171717"
+        android:textSize="@dimen/eighteen_sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ask Customer for OTP"
+        android:textColor="#171717"
+        android:textSize="@dimen/sixteen_sp"/>
+
+    <EditText
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_five_dp"
+        android:padding="@dimen/ten_dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_blue"
+            android:text="Resend OTP"/>
+
+        <TextView
+            android:layout_marginStart="@dimen/five_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_blue"
+            android:text="(60 sec)"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/verifyBtn"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_five_dp"
+        android:textAllCaps="false"
+        android:textSize="@dimen/eighteen_sp"
+        android:text="Verify OTP"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aimplatfarm.aimplatfarmdelivery.Activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/two_eighty_dp"
+            android:layout_margin="@dimen/ten_dp"
+            app:srcCompat="@drawable/welcome_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/five_dp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="Welcome Back,"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twenty_two_sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/five_dp"
+            android:layout_marginBottom="@dimen/ten_dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Enter credentials to continue"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten_dp"
+            android:clipChildren="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@drawable/input_backgrond"
+                android:paddingStart="@dimen/ten_dp"
+                android:paddingEnd="@dimen/ten_dp">
+
+
+                <ImageView
+                    android:id="@+id/phone_ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_licence_24"
+                    app:tint="@color/black" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/three_dp"
+                    android:layout_marginBottom="@dimen/three_dp"
+                    android:layout_toEndOf="@id/phone_ic"
+                    android:background="@color/white">
+
+                    <EditText
+                        android:id="@+id/driveLicence"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fifty_five_dp"
+                        android:background="@color/white"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:padding="@dimen/ten_dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/twenty_five_dp"
+                android:background="@color/white"
+                android:text="Email Address"
+                android:textAlignment="center"
+                android:textColor="@color/light_blue" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten_dp"
+            android:clipChildren="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@drawable/input_backgrond"
+                android:paddingStart="@dimen/ten_dp"
+                android:paddingEnd="@dimen/ten_dp">
+
+
+                <ImageView
+                    android:id="@+id/password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_outline_lock_24"
+                    app:tint="@color/black" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/three_dp"
+                    android:layout_marginBottom="@dimen/three_dp"
+                    android:layout_toEndOf="@id/password"
+                    android:background="@color/white"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/userPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fifty_five_dp"
+                        android:background="@color/white"
+                        android:imeOptions="actionNext"
+                        android:maxLength="15"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/ten_dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/twenty_five_dp"
+                android:background="@color/white"
+                android:text="Enter Password"
+                android:textAlignment="center"
+                android:textColor="@color/light_blue" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/loginError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/ten_dp"
+            android:text="Fill all Fields"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_five_dp"
+            android:layout_margin="@dimen/ten_dp"
+            android:backgroundTint="@color/light_blue"
+            android:fontFamily="@font/poppins_medium"
+            android:onClick="login"
+            android:text="Login"
+            android:textAllCaps="false" />
+        <TextView
+            android:fontFamily="@font/poppins_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/ten_dp"
+            android:onClick="forgotPassword"
+            android:text="Forgot password?"
+            android:textColor="@color/light_blue" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Don't have an Account?" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ten_dp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:onClick="register"
+                android:text="Sign Up"
+                android:textColor="@color/light_blue"
+                android:textSize="@dimen/sixteen_sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:layout_marginBottom="@dimen/ten_dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="© Kisaan Factory All Rights Reserve"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</ScrollView>

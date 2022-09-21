@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_primary">#003567</color>
+    <color name="light_blue">#0A22A1</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="k_orange">#FFB039</color>
+    <color name="k_purpal">#330CA4</color>
+    <color name="k_green">#2F6F19</color>
+    <color name="k_red">#F2472F</color>
+    <color name="disable_color">#C1C1C1</color>
+    <color name="light_gray">#F0F0F0</color>
+</resources>

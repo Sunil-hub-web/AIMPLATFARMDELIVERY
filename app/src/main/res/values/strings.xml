@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Kisaan Factory - Delivery</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="order_id">Order ID</string>
+    <string name="name">Name</string>
+    <string name="sign_up"><u>Sign Up</u></string>
+    <string name="sign_in"><u>Sign In</u></string>
+    <string name="contact_number">Contact No</string>
+    <string name="delivery_to">Delivery To</string>
+    <string name="pickup_form">Pick Up From</string>
+    <string name="upload">Upload</string>
+    <string name="image_of_pickup">Image of Pick up</string>
+    <string name="cancel">Cancel</string>
+    <string name="arriving">Arriving</string>
+    <string name="delivered">Delivered</string>
+    <string name="picked_up">Picked up</string>
+    <string name="cancel_pickup">Cancel Pickup</string>
+    <string name="please_provide_valid_reason">Please Provide Valid Reason</string>
+    <string name="choose_reason">Choose Reason</string>
+    <string name="reason">Reason</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="back">Back</string>
+    <string name="pickup_item">Pickup Item</string>
+    <string name="item_delivered">Item Delivered</string>
+    <string name="item_rejects">Item Rejects</string>
+    <string name="submit">Submit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="permission_denied">Permission Denied</string>
+
+    <string name="internet_error">Please Connect Internet !</string>
+    <string name="User_Position">User Position</string>
+    <string name="Drop_Position">Drop Position</string>
+    <string name="local_service_started">Service Started</string>
+    <string name="ok">Okay</string>
+    <string name="name_of_receiver">Name Of Receiver</string>
+    <string name="signature">Signature</string>
+    <string name="the_delivery_has_been_rejected">The delivery has been rejected</string>
+    <string name="clear_pad">Clear Signature</string>
+    <string name="accept">Accept</string>
+    <string name="Reject">Reject</string>
+    <string name="driver_id">Driver ID</string>
+    <string name="full_name">Full Name</string>
+    <string name="upload_image">Upload Image</string>
+
+    <string-array name="reject_reason">
+        <item>Order Cancelled by Customer</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="support_reson">
+        <item>Password Issue</item>
+        <item>App Issue</item>
+        <item>Other</item>
+
+    </string-array>
+    <string-array name="cancel_reason">
+        <item>Order Cancelled by Customer</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

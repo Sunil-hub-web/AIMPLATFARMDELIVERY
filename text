@@ -1,0 +1,118 @@
+Credential:
+gmail. infokisaanfactory@gmail.com
+Pass: Raj@1980
+razor pay
+infokisaanfactory@gmail.com
+Raj@1990
+
+https://kisaanandfactory.com/privacy-policy
+
+signed
+1. pass 123456789
+
+[7:17 PM, 12/2/2021] Aman Backend T: https://kisaanandfactory.com/api
+[7:23 PM, 12/2/2021] Aman Backend T: https://kisaanandfactory.com/v-panel/
+[7:23 PM, 12/2/2021] Aman Backend T: https://kisaanandfactory.com/w-panel/dashboard/
+
+https://www.figma.com/file/QZl8VvTB3zbTOCmbxxRsBl/Kissan-Driver?node-id=0%3A1
+
+26-09-21
+
+30-09-21
+1. registration screen design and api implementation done.
+2. verify otp screen design and api implementation  done.
+3. location picker screen design and code setup on registration screen done.
+4. login screen design and api implementation done.
+5. profile screen design and api implementation done.
+6. resend otp api implement and timer set.
+7. home dashboard setup and design.
+8. side menu setup and design.
+9. toolbar design and setup.
+
+
+3-10-91
+
+1. Google map setup, routes show on map and location update in background and marker show on map.
+2. bottom sheet design :- 1. arriving screen.
+                          2. pickup screen.
+                          3. delivered screen.
+                          4. upload image screen.
+                          5. reject screen.
+                          6. cancel order screen.
+3. bottom sheet click event managed and also manage bottom sheet animation.
+4. delivered screen signature pad library implement done.
+
+kissan factory Driver App
+
+1. login screen + api  done.
+2. Signup Screen + api Done.
+3. Otp Screen + Api done.
+4. DashBord Screen Done  + api due from backend side.
+5. all bottom sheets request, arriving ,picked up, delivered, cancel order, reject order, Received order Done + api due from backend side.
+6. profile screen design + api done.
+7. notification screen done  + api due from backend side.
+8. support screen done  + api due from backend side.
+9. order history screen and api due.
+10. side drawer design and redirection done.
+11. google map setup done.
+
+kissan factory User App:-
+
+1. notification due from backend side.
+2. chat implement due.
+3. payment gateway due.
+4. home screen slider  + api correction due from backend side.
+5. order history screen and api due.
+6. side drawer design and redirection done.
+7. Home screen api and design work done.
+8. search screen design and api work done.
+9. cart screen design and api work done.
+10. my order screen and api work done.
+11. payment screen design done.
+12. product details screen and api work done.
+13. payment history screen and api work done.
+14. payment history details screen and api implement due.
+
+driver app 11/10/21-
+1. order history screen design api implement done.
+2. order details screen design and api implement done.
+3. pickup api implement done.
+4. delivery api implement done.
+5. image upload api implement done. (for signature)
+6. driver status api
+7. driver_statistics api implement done.
+8. cancel api implement done.
+9. reject api implement done.
+10. accept orders list api done.
+11. request accept api done.
+12. all request list api done.
+13. login api done.
+14. registration api done
+15. otp api done.
+16. profile api done.
+17. map  setup, route shows between pickup and drop locations , marker movement done.
+
+due:- 1. notification api from backend side.
+      2. forgot password design and api implementation.
+      3. driver status api.
+      4. support api.
+      5. invite others.
+
+14-02-22
+Driver:-
+1. home screen request list background issue resolved.
+2. home screen All accept request list background issue resolved.
+3. home screen pickup Request issue resolved( hide if list is empty).
+4. pickup screen:-  image part add and api implement done.
+5. delivery bottom sheet :- reject button added and validation apply.
+6. cancel order bottom sheet :- image part added and api implement done.
+7. reject screen :- back and contact issue resolved.
+8. order history details:- pickup address issue resolved.
+9. logo changes done.
+
+20-02-22
+driver
+1. Your app icon must be a transparent PNG or JPEG, up to 1 MB, 512 px by 512 px.
+2. Your feature graphic must be a PNG or JPEG, up to 1MB, and 1,024 px by 500 px
+
+3. application Short description ,application Full description

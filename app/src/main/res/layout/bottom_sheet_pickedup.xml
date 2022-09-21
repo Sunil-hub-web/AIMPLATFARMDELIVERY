@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/rounded_dialog"
+        android:orientation="vertical"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="35dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center"
+                android:background="@color/disable_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@color/disable_color" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_image_upload"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_200dp"
+                        android:layout_marginTop="@dimen/twenty_five_dp"
+                        android:background="@color/light_gray"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_upload_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:text="@string/upload_image"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen_dp" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_image_upload"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/twenty_five_dp"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="@string/pickup_item"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/eighteen_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/twenty_five_dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/order_id"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fifteen_sp" />
+
+                    <TextView
+                        android:id="@+id/tv_order_id_pickup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="Ad500055"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fifteen_sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fifteen_dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginRight="@dimen/fifteen_dp"
+                            android:layout_toLeftOf="@+id/txt_contact"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/name"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen_sp" />
+
+                        <TextView
+                            android:id="@+id/txt_contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/fifteen_dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/contact_number"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen_sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ten_dp">
+
+                        <TextView
+                            android:id="@+id/tv_name_pickup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginRight="@dimen/fifteen_dp"
+                            android:layout_toLeftOf="@+id/tv_contact_number_pickup"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen_sp" />
+
+                        <TextView
+                            android:id="@+id/tv_contact_number_pickup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/fifteen_dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen_sp" />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/image_of_pickup"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fourteen_sp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:layout_marginBottom="@dimen/ten_dp"
+                        android:orientation="vertical"
+                        android:src="@drawable/upload_image_icon"
+                        android:visibility="gone">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img_upload_pickup"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:src="@drawable/upload_image_icon" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/sixteen_sp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/pickup_form"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sixteen_sp" />
+
+                    <TextView
+                        android:id="@+id/tv_from_add_pickup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fourteen_sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/twenty_dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/delivery_to"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sixteen_sp" />
+
+                    <TextView
+                        android:id="@+id/tv_delivery_to_add_pickup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fourteen_sp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/twenty_dp">
+
+                        <TextView
+                            android:id="@+id/txt_cancel_pickedup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:background="@color/k_red"
+                            android:fontFamily="@font/poppins_medium"
+                            android:paddingLeft="@dimen/twenty_dp"
+                            android:paddingTop="@dimen/ten_dp"
+                            android:paddingRight="@dimen/twenty_dp"
+                            android:paddingBottom="@dimen/ten_dp"
+                            android:text="@string/cancel"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sixteen_sp" />
+
+                        <TextView
+                            android:id="@+id/txt_btn_pickedup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/twenty_dp"
+                            android:layout_toRightOf="@+id/txt_cancel_pickedup"
+                            android:background="@color/k_green"
+                            android:fontFamily="@font/poppins_medium"
+                            android:paddingTop="@dimen/ten_dp"
+                            android:paddingBottom="@dimen/ten_dp"
+                            android:text="@string/picked_up"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+
+                            android:textSize="@dimen/sixteen_sp" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

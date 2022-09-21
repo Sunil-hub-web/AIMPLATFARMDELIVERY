@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/three_fourty_dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/ten_dp">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_five_dp"
+        android:text="Take Signature"
+        android:textAllCaps="false"
+        android:textSize="@dimen/eighteen_sp" />
+
+    <TextView
+        android:layout_marginBottom="@dimen/ten_dp"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/twenty_sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_five_dp"
+        android:text="Verify OTP"
+        android:textAllCaps="false"
+        android:textSize="@dimen/eighteen_sp" />
+</LinearLayout>

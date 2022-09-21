@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.aimplatfarm.aimplatfarmdelivery.Fragments.MapsFragment">
+
+        <fragment
+            android:id="@+id/fragm_mapss"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <include
+                android:id="@+id/bottomSheetDelivered_One"
+                layout="@layout/bottom_sheet_delivered_one"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/bottom_sheet_pickedup"
+                layout="@layout/bottom_sheet_pickedup"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/bottom_sheet_cancel_pickup"
+                layout="@layout/bottom_sheet_cancel_pickup"
+                android:visibility="gone" />
+
+
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </RelativeLayout>
+</layout>

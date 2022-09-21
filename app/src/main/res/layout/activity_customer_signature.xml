@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aimplatfarm.aimplatfarmdelivery.Activities.CustomerSignatureActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <com.raodevs.touchdraw.TouchDrawView
+        android:layout_below="@id/toolbar"
+        android:id="@+id/canvas"
+        app:bg_color="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_above="@id/actionHolder"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/actionHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/clearBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:layout_weight="1"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/acceptBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</RelativeLayout>

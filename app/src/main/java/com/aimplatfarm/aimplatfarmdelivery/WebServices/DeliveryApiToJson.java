@@ -2,6 +2,7 @@ package com.aimplatfarm.aimplatfarmdelivery.WebServices;
 
 import android.util.Log;
 
+import com.aimplatfarm.aimplatfarmdelivery.Models.EditProfile;
 import com.aimplatfarm.aimplatfarmdelivery.Models.Password;
 import com.aimplatfarm.aimplatfarmdelivery.Models.ApiResponse;
 
@@ -248,6 +249,11 @@ public class DeliveryApiToJson {
     // get profile
     public Call<ApiResponse> getProfile(String token) {
         return deliveryApi.getProfile(token);
+    }
+
+    // edit profile
+    public Call<ApiResponse> editProfile(String token, EditProfile editProfile) {
+        return deliveryApi.editProfile(token, editProfile);
     }
 
     // change stauts

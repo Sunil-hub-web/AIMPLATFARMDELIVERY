@@ -1,5 +1,6 @@
 package com.aimplatfarm.aimplatfarmdelivery.WebServices;
 
+import com.aimplatfarm.aimplatfarmdelivery.Models.EditProfile;
 import com.aimplatfarm.aimplatfarmdelivery.Models.Password;
 import com.aimplatfarm.aimplatfarmdelivery.Models.requestDto.RequestDto;
 import com.aimplatfarm.aimplatfarmdelivery.Models.ApiResponse;
@@ -62,6 +63,10 @@ public interface DeliveryApi {
     // get profile
     @GET("profile")
     Call<ApiResponse> getProfile(@Header("auth-token") String token);
+
+    // edit profile
+    @GET("auth/edit")
+    Call<ApiResponse> editProfile(@Header("auth-token") String token, @Body EditProfile editProfile);
 
     // toggle status
     @PUT("status/update")

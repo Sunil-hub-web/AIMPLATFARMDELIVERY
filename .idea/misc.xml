@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/New folder/Kisaan and Factory Driver/Kisaan_Factory_Delivery/app/src/main/res/drawable-v24/drawer_outline.xml" value="0.1115" />
+        <entry key="..\:/New folder/Kisaan and Factory Driver/Kisaan_Factory_Delivery/app/src/main/res/drawable/addnewprod_bg.xml" value="0.1115" />
+        <entry key="..\:/New folder/Kisaan and Factory Driver/Kisaan_Factory_Delivery/app/src/main/res/drawable/circle_image.xml" value="0.1115" />
         <entry key="..\:/New folder/Kisaan and Factory Driver/Kisaan_Factory_Delivery/app/src/main/res/drawable/frame_23.xml" value="0.111" />
+        <entry key="..\:/New folder/Kisaan and Factory Driver/Kisaan_Factory_Delivery/app/src/main/res/drawable/ic_baseline_exit_to_app_24.xml" value="0.1115" />
+        <entry key="..\:/New folder/Kisaan and Factory Driver/Kisaan_Factory_Delivery/app/src/main/res/drawable/rectangle_3.xml" value="0.1115" />
         <entry key="..\:/New folder/Kisaan and Factory Driver/Kisaan_Factory_Delivery/app/src/main/res/layout/activity_agent_profile.xml" value="0.22083333333333333" />
         <entry key="..\:/New folder/Kisaan and Factory Driver/Kisaan_Factory_Delivery/app/src/main/res/layout/activity_login.xml" value="0.22083333333333333" />
         <entry key="..\:/New folder/Kisaan and Factory Driver/Kisaan_Factory_Delivery/app/src/main/res/layout/activity_order_delivered.xml" value="0.1935185185185185" />
@@ -22,11 +27,14 @@
         <entry key="..\:/New folder/Kisaan and Factory Driver/Kisaan_Factory_Delivery/app/src/main/res/layout/logout_dialog.xml" value="0.22083333333333333" />
         <entry key="..\:/New folder/Kisaan and Factory Driver/Kisaan_Factory_Delivery/app/src/main/res/layout/notification_item.xml" value="0.22083333333333333" />
         <entry key="..\:/New folder/Kisaan and Factory Driver/Kisaan_Factory_Delivery/app/src/main/res/layout/order_history_item.xml" value="0.22083333333333333" />
+        <entry key="..\:/New folder/Kisaan and Factory Driver/Kisaan_Factory_Delivery/app/src/main/res/layout/payment_dailog1.xml" value="0.22083333333333333" />
+        <entry key="..\:/New folder/Kisaan and Factory Driver/Kisaan_Factory_Delivery/app/src/main/res/layout/payment_dialog2.xml" value="0.22083333333333333" />
         <entry key="..\:/New folder/Kisaan and Factory Driver/Kisaan_Factory_Delivery/app/src/main/res/layout/product_item.xml" value="0.22083333333333333" />
         <entry key="..\:/New folder/Kisaan and Factory Driver/Kisaan_Factory_Delivery/app/src/main/res/layout/requests_item.xml" value="0.22083333333333333" />
         <entry key="..\:/New folder/Kisaan and Factory Driver/Kisaan_Factory_Delivery/app/src/main/res/layout/side_nav_header.xml" value="0.22083333333333333" />
         <entry key="..\:/New folder/Kisaan and Factory Driver/Kisaan_Factory_Delivery/app/src/main/res/layout/toolbar.xml" value="0.22083333333333333" />
         <entry key="..\:/New folder/Kisaan and Factory Driver/Kisaan_Factory_Delivery/app/src/main/res/layout/verify_otp_dialog.xml" value="0.22083333333333333" />
+        <entry key="..\:/New folder/Kisaan and Factory Driver/Kisaan_Factory_Delivery/app/src/main/res/layout/walletfragment.xml" value="0.22083333333333333" />
         <entry key="..\:/New folder/Kisaan and Factory Driver/Kisaan_Factory_Delivery/app/src/main/res/menu/side_menu.xml" value="0.16203703703703703" />
       </map>
     </option>

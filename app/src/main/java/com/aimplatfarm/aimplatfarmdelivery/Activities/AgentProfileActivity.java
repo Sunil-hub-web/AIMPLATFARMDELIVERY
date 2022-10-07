@@ -10,9 +10,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.aimplatfarm.aimplatfarmdelivery.Models.EditProfile;
 import com.aimplatfarm.aimplatfarmdelivery.WebServices.DeliveryApiToJson;
 import com.aimplatfarm.aimplatfarmdelivery.Models.ApiResponse;
 import com.aimplatfarm.aimplatfarmdelivery.Models.DriverDetails;
@@ -29,12 +32,71 @@ public class AgentProfileActivity extends AppCompatActivity {
     String token;
     private SessionManager sessionManager;
 
+    EditText mobilenumber_ed,name_ed,email_ed,drivingLisence_ed,accountnumber_ed,ifsccode_ed,
+            bankname_ed,address_ed,locality_ed,state_ed,city_ed,street_ed,zipcode_ed;
+
+    String mobilenumber_str,name_str,email_str,drivingLisence_str,accountnumber_str,ifsccode_str,
+            bankname_str,address_str,locality_str,state_str,city_str,street_str,zipcode_str;
+
+    ImageView edit_image,save_image;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agent_profile);
         sessionManager = new SessionManager(this);
         init();
+
+        edit_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                name_ed.setEnabled(true);
+                mobilenumber_ed.setEnabled(true);
+                email_ed.setEnabled(true);
+                bankname_ed.setEnabled(true);
+                accountnumber_ed.setEnabled(true);
+                ifsccode_ed.setEnabled(true);
+                state_ed.setEnabled(true);
+                city_ed.setEnabled(true);
+                street_ed.setEnabled(true);
+                zipcode_ed.setEnabled(true);
+                address_ed.setEnabled(true);
+                locality_ed.setEnabled(true);
+
+                name_ed.requestFocus();
+
+                edit_image.setVisibility(View.GONE);
+                save_image.setVisibility(View.VISIBLE);
+            }
+        });
+
+        save_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                mobilenumber_str = mobilenumber_ed.getText().toString().trim();
+                name_str = name_ed.getText().toString().trim();
+                email_str = email_ed.getText().toString().trim();
+                drivingLisence_str = drivingLisence_ed.getText().toString().trim();
+                accountnumber_str = accountnumber_ed.getText().toString().trim();
+                ifsccode_str = ifsccode_ed.getText().toString().trim();
+                bankname_str = bankname_ed.getText().toString().trim();
+                address_str = address_ed.getText().toString().trim();
+                locality_str = locality_ed.getText().toString().trim();
+                state_str = state_ed.getText().toString().trim();
+                city_str = city_ed.getText().toString().trim();
+                street_str = street_ed.getText().toString().trim();
+                zipcode_str = zipcode_ed.getText().toString().trim();
+
+
+                editProfile(email_str,name_str,mobilenumber_str,zipcode_str,"",drivingLisence_str,"+91",
+                        "","","",locality_str,state_str,accountnumber_str,bankname_str,
+                        ifsccode_str);
+
+            }
+        });
+
     }
 
     private void init() {
@@ -48,6 +110,10 @@ public class AgentProfileActivity extends AppCompatActivity {
 
             TextView title = toolbar.findViewById(R.id.tb_title);
             title.setText("Agent Profile");
+
+            edit_image = findViewById(R.id.edit_image);
+            save_image = findViewById(R.id.save_image);
+
         }
 
         getProfile();
@@ -88,39 +154,51 @@ public class AgentProfileActivity extends AppCompatActivity {
         // name, phone, email
 
 
-        TextView stateTv, streetTv, zipTv, cityTv, bankTv, accountNumTv, ifscTv, nameTv, name2Tv, phoneTv, emailTv;
+        name_ed = findViewById(R.id.name_ed);
+        mobilenumber_ed = findViewById(R.id.mobilenumber_ed);
+        email_ed = findViewById(R.id.email_ed);
+        drivingLisence_ed = findViewById(R.id.drivingLisence_ed);
 
-        nameTv = findViewById(R.id.nameTv);
-        name2Tv = findViewById(R.id.name2Tv);
-        phoneTv = findViewById(R.id.phoneTv);
-        emailTv = findViewById(R.id.emailTv);
+        name_ed.setText(user.getName());
+        name_ed.setText(user.getName());
+        mobilenumber_ed.setText(user.getMobile() + "");
+        email_ed.setText(user.getDrivingLisence());
 
-        nameTv.setText(user.getName());
-        name2Tv.setText("Name : " + user.getName());
-        phoneTv.setText("Mobile : +91-" + user.getMobile() + "");
-        emailTv.setText("License : " + user.getDrivingLisence());
+        state_ed = findViewById(R.id.state_ed);
+        street_ed = findViewById(R.id.street_ed);
+        city_ed = findViewById(R.id.city_ed);
+        zipcode_ed = findViewById(R.id.zipcode_ed);
 
-        stateTv = findViewById(R.id.stateTv);
-        streetTv = findViewById(R.id.streetTv);
-        cityTv = findViewById(R.id.cityTv);
-        zipTv = findViewById(R.id.zipTv);
+        state_ed.setText(user.getLocation().getState());
+        street_ed.setText(user.getLocation().getLocality());
+        zipcode_ed.setText(user.getLocation().getZip() + "");
+        city_ed.setText(user.getLocation().getCity());
 
-        stateTv.setText(user.getLocation().getState());
-        streetTv.setText(user.getLocation().getLocality());
-        zipTv.setText(user.getLocation().getZip() + "");
-        cityTv.setText(user.getLocation().getCity());
+        bankname_ed = findViewById(R.id.bankname_ed);
+        accountnumber_ed = findViewById(R.id.accountnumber_ed);
+        ifsccode_ed = findViewById(R.id.ifsccode_ed);
 
-        bankTv = findViewById(R.id.bankTv);
-        accountNumTv = findViewById(R.id.accountNumTv);
-        ifscTv = findViewById(R.id.ifscTv);
+        bankname_ed.setText(user.getAccountDetails().getBankName());
+        accountnumber_ed.setText(user.getAccountDetails().getAccountNumber()+ "");
+        ifsccode_ed.setText(user.getAccountDetails().getIfscCode());
 
-        bankTv.setText("Bank Name : " + user.getAccountDetails().getBankName());
-        accountNumTv.setText("Account Num : " + user.getAccountDetails().getAccountNumber());
-        ifscTv.setText("IFSC : " + user.getAccountDetails().getIfscCode());
+        name_ed.setEnabled(false);
+        mobilenumber_ed.setEnabled(false);
+        email_ed.setEnabled(false);
+        bankname_ed.setEnabled(false);
+        accountnumber_ed.setEnabled(false);
+        ifsccode_ed.setEnabled(false);
+        state_ed.setEnabled(false);
+        city_ed.setEnabled(false);
+        street_ed.setEnabled(false);
+        zipcode_ed.setEnabled(false);
+        address_ed.setEnabled(false);
+        locality_ed.setEnabled(false);
     }
 
-    // logout the user
+   /* // logout the user
     public void logout(View view1) {
+
         Dialog dialog = new Dialog(AgentProfileActivity.this);
         dialog.setContentView(R.layout.logout_dialog);
         dialog.setCancelable(true);
@@ -141,7 +219,8 @@ public class AgentProfileActivity extends AppCompatActivity {
         });
         dialog.create();
         dialog.show();
-    }
+
+    }*/
 
     // clearing prefs
     private void clearSharedPrefs() {
@@ -155,5 +234,74 @@ public class AgentProfileActivity extends AppCompatActivity {
             super.onBackPressed();
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void editProfile(String emailID,String name,String mobile,String zip,String driver_id,
+                            String drivingLisence,String countryCode,String profilePhoto,String DlPhoto,
+                            String AddressProof,String locality,String state,String accountNumber,String bankName,
+                            String ifscCode){
+
+        ProgressDialog dialog = new ProgressDialog(this);
+        dialog.setCancelable(false);
+        dialog.setMessage("Please wait..");
+        dialog.create();
+        dialog.show();
+
+        EditProfile editProfile = new EditProfile();
+        editProfile.setEmailID(emailID);
+        editProfile.setName(name);
+        editProfile.setMobile(mobile);
+        editProfile.setZip(zip);
+        editProfile.setDriver_id(driver_id);
+        editProfile.setDrivingLisence(drivingLisence);
+        editProfile.setCountryCode(countryCode);
+        editProfile.setLocality(locality);
+        editProfile.setState(state);
+        editProfile.setAccountNumber(accountNumber);
+        editProfile.setBankName(bankName);
+        editProfile.setIfscCode(ifscCode);
+
+        Call<ApiResponse> call_editProfile = new DeliveryApiToJson().editProfile(token,editProfile);
+        call_editProfile.enqueue(new Callback<ApiResponse>() {
+            @Override
+            public void onResponse(Call<ApiResponse> call, Response<ApiResponse> response) {
+
+                dialog.dismiss();
+
+                if(response.isSuccessful()){
+
+                    name_ed.setEnabled(false);
+                    mobilenumber_ed.setEnabled(false);
+                    email_ed.setEnabled(false);
+                    bankname_ed.setEnabled(false);
+                    accountnumber_ed.setEnabled(false);
+                    ifsccode_ed.setEnabled(false);
+                    state_ed.setEnabled(false);
+                    city_ed.setEnabled(false);
+                    street_ed.setEnabled(false);
+                    zipcode_ed.setEnabled(false);
+                    address_ed.setEnabled(false);
+                    locality_ed.setEnabled(false);
+
+                    name_ed.requestFocus();
+
+                    edit_image.setVisibility(View.VISIBLE);
+                    save_image.setVisibility(View.GONE);
+
+                }else{
+
+
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ApiResponse> call, Throwable t) {
+
+                dialog.dismiss();
+                Toast.makeText(AgentProfileActivity.this, ""+t, Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
     }
 }

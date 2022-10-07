@@ -61,7 +61,7 @@
 
         </RelativeLayout>
 
-        <RelativeLayout
+      <!--  <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -77,7 +77,7 @@
                 android:text="My payment"
                 android:textAppearance="@style/my_payment_" />
 
-           <!-- <TextView
+           &lt;!&ndash; <TextView
                 android:id="@+id/today_"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -87,16 +87,16 @@
                 android:layout_marginRight="@dimen/twenty_five_dp"
                 android:gravity="top"
                 android:text="Today"
-                android:textAppearance="@style/today_" />-->
+                android:textAppearance="@style/today_" />&ndash;&gt;
 
 
-        </RelativeLayout>
+        </RelativeLayout>-->
 
-       <!-- <androidx.recyclerview.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/payment_recycler"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/fifteen_dp" />-->
+            android:layout_marginTop="@dimen/fifteen_dp" />
 
     </LinearLayout>
 

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/expandableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rectangle_3"
+        android:layout_margin="@dimen/_5dp"
+        android:elevation="@dimen/_5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_margin="@dimen/_5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:text="Product Id"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#5F5E5E"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_15dp"
+                android:layout_marginLeft="@dimen/_15dp"></TextView>
+
+            <TextView
+                android:id="@+id/productId"
+                android:layout_width="0dp"
+                android:layout_weight="1.1"
+                android:layout_height="wrap_content"
+                android:text="Sunil Dash"
+                android:textColor="#5F5E5E"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_15dp"
+                android:layout_marginLeft="@dimen/_15dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_margin="@dimen/_5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#5F5E5E"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_15dp"
+                android:layout_marginLeft="@dimen/_15dp"></TextView>
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="0dp"
+                android:layout_weight="1.1"
+                android:layout_height="wrap_content"
+                android:text="Payment Status"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#5F5E5E"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_15dp"
+                android:layout_marginLeft="@dimen/_15dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_margin="@dimen/_5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textColor="#5F5E5E"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_15dp"
+                android:layout_marginLeft="@dimen/_15dp"></TextView>
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="0dp"
+                android:layout_weight="1.1"
+                android:layout_height="wrap_content"
+                android:text="Delivered"
+                android:textColor="@color/k_green"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_15dp"
+                android:layout_marginLeft="@dimen/_15dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_margin="@dimen/_5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:text="CR Amount"
+                android:textColor="#5F5E5E"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_15dp"
+                android:layout_marginLeft="@dimen/_15dp"></TextView>
+
+            <TextView
+                android:id="@+id/crAmount"
+                android:layout_width="0dp"
+                android:layout_weight="1.1"
+                android:layout_height="wrap_content"
+                android:text="Sunil Dash"
+                android:textColor="@color/k_green"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_15dp"
+                android:layout_marginLeft="@dimen/_15dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_marginBottom="@dimen/_10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:textColor="#5F5E5E"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_15dp"
+                android:layout_marginLeft="@dimen/_15dp"></TextView>
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="0dp"
+                android:layout_weight="1.1"
+                android:layout_height="wrap_content"
+                android:text="Sunil Dash"
+                android:textColor="#5F5E5E"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_15dp"
+                android:layout_marginLeft="@dimen/_15dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_marginBottom="@dimen/_10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:text="EST Date"
+                android:textColor="#5F5E5E"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_15dp"
+                android:layout_marginLeft="@dimen/_15dp"></TextView>
+
+            <TextView
+                android:id="@+id/estDate"
+                android:layout_width="0dp"
+                android:layout_weight="1.1"
+                android:layout_height="wrap_content"
+                android:text="Sunil Dash"
+                android:textColor="#5F5E5E"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_15dp"
+                android:layout_marginLeft="@dimen/_15dp"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

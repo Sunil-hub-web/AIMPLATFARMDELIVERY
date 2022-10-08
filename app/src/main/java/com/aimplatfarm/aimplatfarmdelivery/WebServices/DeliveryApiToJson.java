@@ -11,11 +11,14 @@ import com.aimplatfarm.aimplatfarmdelivery.Models.ImageResponse;
 import com.aimplatfarm.aimplatfarmdelivery.Models.Location;
 
 import com.aimplatfarm.aimplatfarmdelivery.Models.RejectDto.RejectDto;
+import com.aimplatfarm.aimplatfarmdelivery.Models.requestDto.Example_ex;
 import com.aimplatfarm.aimplatfarmdelivery.Models.requestDto.RequestDto;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
+
+import org.json.JSONObject;
 
 import java.security.cert.CertificateException;
 import java.util.ArrayList;
@@ -252,7 +255,7 @@ public class DeliveryApiToJson {
     }
 
     // edit profile
-    public Call<ApiResponse> editProfile(String token, EditProfile editProfile) {
+    public Call<Example_ex> editProfile(String token, JSONObject editProfile) {
         return deliveryApi.editProfile(token, editProfile);
     }
 

@@ -86,4 +86,19 @@ public class ApiResponse {
     public void setMsg(String msg) {
         this.msg = msg;
     }
+
+    @Override
+    public String toString() {
+        return "ApiResponse{" +
+                "code=" + code +
+                ", msg='" + msg + '\'' +
+                ", err=" + err +
+                ", mobile=" + mobile +
+                ", token='" + token + '\'' +
+                ", notification=" + notification +
+                ", data=" + data +
+                ", orderDetails=" + orderDetails +
+                ", mobileVerified=" + mobileVerified +
+                '}';
+    }
 }

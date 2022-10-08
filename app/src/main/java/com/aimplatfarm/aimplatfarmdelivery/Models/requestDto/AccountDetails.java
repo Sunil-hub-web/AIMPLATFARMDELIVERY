@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class AccountDetails implements Serializable {
     private String bankName;
     private String ifscCode;
-    private double accountNumber;
+    private String accountNumber;
 
     public String getBankName() {
         return bankName;
@@ -23,11 +23,11 @@ public class AccountDetails implements Serializable {
         this.ifscCode = ifscCode;
     }
 
-    public double getAccountNumber() {
+    public String getAccountNumber() {
         return accountNumber;
     }
 
-    public void setAccountNumber(double accountNumber) {
+    public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
 }

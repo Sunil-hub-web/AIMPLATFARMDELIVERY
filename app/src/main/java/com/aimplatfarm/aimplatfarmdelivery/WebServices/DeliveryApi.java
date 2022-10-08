@@ -2,6 +2,7 @@ package com.aimplatfarm.aimplatfarmdelivery.WebServices;
 
 import com.aimplatfarm.aimplatfarmdelivery.Models.EditProfile;
 import com.aimplatfarm.aimplatfarmdelivery.Models.Password;
+import com.aimplatfarm.aimplatfarmdelivery.Models.requestDto.Example_ex;
 import com.aimplatfarm.aimplatfarmdelivery.Models.requestDto.RequestDto;
 import com.aimplatfarm.aimplatfarmdelivery.Models.ApiResponse;
 
@@ -10,6 +11,8 @@ import com.aimplatfarm.aimplatfarmdelivery.Models.ImageResponse;
 import com.aimplatfarm.aimplatfarmdelivery.Models.Location;
 import com.aimplatfarm.aimplatfarmdelivery.Models.RejectDto.RejectDto;
 import com.google.gson.JsonObject;
+
+import org.json.JSONObject;
 
 import okhttp3.MultipartBody;
 import retrofit2.Call;
@@ -66,7 +69,7 @@ public interface DeliveryApi {
 
     // edit profile
     @GET("auth/edit")
-    Call<ApiResponse> editProfile(@Header("auth-token") String token, @Body EditProfile editProfile);
+    Call<Example_ex> editProfile(@Header("auth-token") String token, @Body JSONObject editProfile);
 
     // toggle status
     @PUT("status/update")

@@ -104,11 +104,19 @@ public class LoginActivity extends AppCompatActivity {
                 call.enqueue(new Callback<ApiResponse>() {
                     @Override
                     public void onResponse(Call<ApiResponse> call, Response<ApiResponse> response) {
+
+                        Log.d("sunilresponse",response.body().toString());
+
                         if (response.isSuccessful()) {
+
                             dialog.dismiss();
+
                             // save token to shared prefs
                             ApiResponse apiResponse = response.body();
                             // open main activity
+
+                            Toast.makeText(LoginActivity.this, "Success", Toast.LENGTH_SHORT).show();
+
 
                             DriverDetails userData = apiResponse.getData();
                             sessionManager.setUserDetail(userData);
@@ -139,13 +147,16 @@ public class LoginActivity extends AppCompatActivity {
                             ApiResponse message = gson.fromJson(response.errorBody().charStream(), ApiResponse.class);
                               showError(message.getMsg());
                               // showError("Account not Exists !");
+
+                            Toast.makeText(LoginActivity.this, "error", Toast.LENGTH_SHORT).show();
                         }
                     }
 
                     @Override
                     public void onFailure(Call<ApiResponse> call, Throwable t) {
                         dialog.dismiss();
-                        showError(t.getMessage());
+                        showError(t+"");
+                        //Toast.makeText(LoginActivity.this, "error"+t, Toast.LENGTH_SHORT).show();
                     }
                 });
 

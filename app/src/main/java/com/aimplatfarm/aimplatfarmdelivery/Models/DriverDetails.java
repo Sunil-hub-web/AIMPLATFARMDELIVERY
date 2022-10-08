@@ -10,7 +10,7 @@ public class DriverDetails {
     private String panNum="";
     //private Striung mobile=0;
     private String mobile="";
-    private long accountNum=0;
+    private String accountNum="";
     private String password="";
     private int otp;
     private String countryCode="";
@@ -259,11 +259,11 @@ public class DriverDetails {
         this.mobile1 = mobile1;
     }*/
 
-    public long getAccountNum() {
+    public String getAccountNum() {
         return accountNum;
     }
 
-    public void setAccountNum(long accountNum) {
+    public void setAccountNum(String accountNum) {
         this.accountNum = accountNum;
     }
 

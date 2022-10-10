@@ -14,11 +14,16 @@ import com.google.gson.JsonObject;
 
 import org.json.JSONObject;
 
+import java.util.Map;
+
 import okhttp3.MultipartBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.FieldMap;
+import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
+import retrofit2.http.Headers;
 import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
@@ -68,7 +73,8 @@ public interface DeliveryApi {
     Call<ApiResponse> getProfile(@Header("auth-token") String token);
 
     // edit profile
-    @GET("auth/edit")
+    @Headers("Content-Type: application/json")
+    @PUT("auth/edit")
     Call<Example_ex> editProfile(@Header("auth-token") String token, @Body JSONObject editProfile);
 
     // toggle status

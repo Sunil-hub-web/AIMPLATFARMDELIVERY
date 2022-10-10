@@ -73,6 +73,16 @@ public class SessionManager {
         return deviceToken;
     }
 
+    public void setUSERID(String vId) {
+        this.editor.putString(USER_ID, vId);
+        editor.commit();
+    }
+
+    public String getUSERID() {
+        String deviceToken = preferences.getString(USER_ID, "");
+        return deviceToken;
+    }
+
     public void setFCM_TOKEN(String vFCM_TOKEN) {
         this.editor.putString(FCM_TOKEN, vFCM_TOKEN);
         editor.commit();

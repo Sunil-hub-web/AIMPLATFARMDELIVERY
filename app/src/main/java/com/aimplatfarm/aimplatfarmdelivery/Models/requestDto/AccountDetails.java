@@ -30,4 +30,6 @@ public class AccountDetails implements Serializable {
     public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
+
+
 }

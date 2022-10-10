@@ -119,9 +119,12 @@ public class LoginActivity extends AppCompatActivity {
 
 
                             DriverDetails userData = apiResponse.getData();
+
                             sessionManager.setUserDetail(userData);
                             sessionManager.setDeviceToken(apiResponse.getToken());
                             sessionManager.setName(apiResponse.getData().getName());
+                            String id = apiResponse.getData().get_id();
+                            sessionManager.setUSERID(id);
                             sessionManager.login();
                             startActivity(new Intent(LoginActivity.this, MainActivity.class)
                                     .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));

@@ -3,7 +3,7 @@ package com.aimplatfarm.aimplatfarmdelivery.Models;
 public class AccountDetails {
     private String bankName;
     private String ifscCode;
-    private double accountNumber;
+    private String accountNumber;
 
     public String getBankName() {
         return bankName;
@@ -21,11 +21,11 @@ public class AccountDetails {
         this.ifscCode = ifscCode;
     }
 
-    public double getAccountNumber() {
+    public String getAccountNumber() {
         return accountNumber;
     }
 
-    public void setAccountNumber(double accountNumber) {
+    public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
 }

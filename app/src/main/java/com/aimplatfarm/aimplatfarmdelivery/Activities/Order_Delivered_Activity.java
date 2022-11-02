@@ -155,17 +155,29 @@ public class Order_Delivered_Activity extends AppCompatActivity implements View.
                     dialog.dismiss();
                     RequestDto requestDto = response.body();
                     if (requestDto.getCode() == 200) {
+
                         Toast.makeText(Order_Delivered_Activity.this, requestDto.getMsg().toString(), Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(Order_Delivered_Activity.this, MainActivity.class);
                         startActivity(intent);
                         finish();
+
                     } else {
                         dialog.dismiss();
                         Toast.makeText(Order_Delivered_Activity.this, requestDto.getMsg().toString(), Toast.LENGTH_SHORT).show();
+
+                        Toast.makeText(Order_Delivered_Activity.this, requestDto.getMsg().toString(), Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(Order_Delivered_Activity.this, MainActivity.class);
+                        startActivity(intent);
+                        finish();
                     }
 
                 } else {
-                    Toast.makeText(Order_Delivered_Activity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(Order_Delivered_Activity.this, response.body().getMsg(), Toast.LENGTH_SHORT).show();
+
+                    //Toast.makeText(Order_Delivered_Activity.this, requestDto.getMsg().toString(), Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(Order_Delivered_Activity.this, MainActivity.class);
+                    startActivity(intent);
+                    finish();
 
                 }
                 //  swipeRefreshLayout.setRefreshing(false);
@@ -183,6 +195,7 @@ public class Order_Delivered_Activity extends AppCompatActivity implements View.
 
     /////photo upload
     private void uploadImage(File file) {
+
         ProgressDialog dialog = new ProgressDialog(this);
         dialog.setMessage("Please wait..");
         dialog.setCancelable(false);
